@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LAG Indicator Styles */
+.lag-indicator {
+  display: flex;
+  gap: 4px;
+}
+
+.lag-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.lag-dot.active {
+  background-color: #10b981;
+}
+
+.lag-dot.max {
+  background-color: #10b981;
+}
